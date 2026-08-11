@@ -1,0 +1,1 @@
+print('Aristóteles disse certa vez: "A excelência, portanto, é um hábito"')
