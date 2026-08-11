@@ -1,14 +1,7 @@
-cities={'rio de janeiro':{'country':'brasil','population':'+6M','fact':'perigosa'},
-        'são paulo':{'country':'brasil','population':'+46M','fact':'feia'},
-        'fortaleza': {'country':'brasil','population':'+2M','fact':'deserta'}
-        }
+def describe_city(cidade,país='Brasil'):
+    """Descreve uma cidade e país"""
+    print(f"\n{cidade.title()} fica em {país.title()}")
 
-for cidade,informação in cities.items():
-    print(f"\n{cidade.title()}")
-    país=f"{informação['country']}"
-    população=f"{informação['population']}"
-    fato=f"{informação['fact']}"
-
-    print(f"-{país.title()}")
-    print(f"-{população.title()}")
-    print(f"-{fato.title()}")
+describe_city('rio de janeiro')
+describe_city(cidade='miami',país='estados unidos')
+describe_city(país='canadá',cidade='toronto')
